@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Documentation Page</title>
+    <link rel="stylesheet" href="javadocumentation.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JAVA Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Java_Development_Kit_&_Java_Editions">Java Development Kit & Java Editions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#How_Java_Code_Gets_Executed">How Java Code Gets Executed</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Hello_world">Hello World</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Comments">Comments</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Escape_Sequence">Escape Sequence</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+          <p> Java is one of the most popular programming languages in the world. With Java you can build various types of applications such as desktop, web, mobile apps and distributed systems.</p>
+          <p>Java was developed by James Gosling in 1995 at Sun Microsystems (later acquired by Oracle). It was initially called Oak. Later it was renamed to Green and was finally renamed to Java inspired by Java coffee. Java has close to 9 million developers worldwide. </p>
+        </article>
+      </section>
+      <section id="Java_Development_Kit_&_Java_Editions" class="main-section">
+        <header>Java Development Kit & Java Editions</header>
+        <article>
+          <p>We use Java Development Kit (JDK) to build Java applications. JDK contains a compiler, the Java Runtime Environment (JRE) and a library of classes that we use to build applications. </p>
+          <h4>Java Editions:</h4>
+          <ul>
+            <li><strong>Java Standard Edition (SE):</strong> the core Java platform. It contains all of the libraries that every Java developer must learn.</li>
+            <li><strong>Java Enterprise Edition (EE):</strong> used for building very large scale,
+distributed systems. It’s built on top of Java SE and provides additional
+libraries for building fault-tolerant, distributed, multi-tier software. </li>
+            <li><strong>Java Micro Edition (ME):</strong> a subset of Java SE, designed for mobile
+devices. It also has libraries specific to mobile devices.</li>
+            <li><strong>Java Card:</strong> used in smart cards. </li>
+          </ul>
+        </article>
+      </section>
+      <section id="How_Java_Code_Gets_Executed" class="main-section">
+        <header>How Java Code Gets Executed</header>
+        <article>
+          <p>The Java compiler takes Java code and compiles it down to Java Bytecode which is a cross-platform format. When we run Java applications, Java Virtual Machine (JVM) gets loaded in the memory. It takes our bytecode as the input and translates it to the native code for the underlying operating system. There are various implementations of Java Virtual Machine for almost all operating systems. </p>
+          <p>The smallest building blocks in Java programs are methods (also called functions in other programming languages). We combine related methods in classes, and related classes in packages. This modularity in Java allows us to break down large programs into smaller building blocks that are easier to understand and re-use. </p>
+        </article>
+      </section>
+      <section id="Hello_world" class="main-section">
+        <header>Hello World</header>
+        <article>
+          <p>To get started with writing Java programs, open any IDE and write your first "Hello world" Java code:</p>
+          <code>
+            public class FirstCode {
+                public static void main(String[] args) {
+                    System.out.println("Hello World!");
+                }
+            }
+          </code>
+        </article>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>Variables</header>
+        <article>
+          <p>We use variables to temporarily store data in computer’s memory. In Java, the type of a variable should be specified at the time of declaration. </p>
+          <p>In Java, we have two categories of types: </p>
+          <ul>
+            <li><strong>Primitives:</strong> for storing simple values like numbers, strings and booleans. </li>
+            <li><strong>Reference Types:</strong> for storing complex objects like email messages.</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Declaring_Variables" class="main-section">
+        <header>Declaring Variables</header>
+        <article>
+          <code>
+            byte age = 30;
+            long viewsCount = 3_123_456L;
+            float price = 10.99F;
+            char letter = ‘A’;
+            boolean isEligible = true;
+          </code>
+          <ul>
+            <li>In Java, we terminate statements with a semicolon.</li>
+            <li>We enclose characters with single quotes and strings (series of characters) with double quotes. </li>
+            <li>The default integer type in Java is int. To represent a long value, we should add L to it as a postfix. </li>
+            <li>The default floating-point type in Java is double. To represent a float, we should append F to it as a postfix. </li>
+          </ul>
+        </article>
+      </section>
+      <section id="Comments" class="main-section">
+        <header>Comments</header>
+        <article>
+          <p>We use comments to add notes to our code. </p>
+          <code>// This is a comment and it won’t get executed.</code>
+        </article>
+      </section>
+      <section id="Escape_Sequence" class="main-section">
+        <header>Escape Sequence</header>
+        <article>
+          <p>If you need to use a backslash or a double quotation mark in a string, you need to prefix it with a backslash. This is called escaping. </p>
+          <p>Common escape sequences: </p>
+          <code>\\</code>
+          <code>\" (print " character)</code>
+          <code>\n (new line)</code>
+          <code>\t (tab)</code>
+        </article>
+
+      </section>
+    </main>
+  </body>
+</html>
